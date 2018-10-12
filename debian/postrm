@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+if test "$1" = "purge"; then
+    dpkg-statoverride --remove /etc/bird2 >/dev/null 2>/dev/null || true
+fi
+
+#DEBHELPER#
+
+exit 0

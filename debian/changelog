@@ -1,0 +1,6 @@
+bird2 (2.0.2-0~bionic0+exo1) bionic; urgency=medium
+
+  * Initial release. Co-installable with bird.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 12 Oct 2018 13:29:50 +0200
+

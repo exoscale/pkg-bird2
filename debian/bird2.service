@@ -1,0 +1,18 @@
+[Unit]
+Description=BIRD 2.x Internet Routing Daemon
+After=networking.service
+Before=network.target multi-user.target shutdown.target
+Conflicts=shutdown.target
+Wants=network.target
+DefaultDependencies=no
+
+[Service]
+ExecStartPre=/usr/sbin/bird2 -p
+ExecReload=/usr/sbin/bird2c configure
+ExecStart=/usr/sbin/bird2 -f -u bird2 -g bird2
+Restart=on-failure
+Nice=-10
+OOMScoreAdjust=-200
+
+[Install]
+WantedBy=multi-user.target

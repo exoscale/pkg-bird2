@@ -1,0 +1,24 @@
+Source: bird2
+Section: net
+Priority: extra
+Build-Depends: debhelper (>= 10~),
+               bison,
+               flex,
+               libncurses5-dev,
+               libreadline-dev
+Maintainer: Vincent Bernat <bernat@debian.org>
+Standards-Version: 3.9.6
+Homepage: http://bird.network.cz/
+
+Package: bird2
+Architecture: any
+Depends: adduser,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Internet Routing Daemon
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ This package is for BIRD 2.x.
