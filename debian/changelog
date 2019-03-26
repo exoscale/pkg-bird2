@@ -1,10 +1,10 @@
-bird2 (2.0.3-0~bionic0+exo1) bionic; urgency=medium
+bird2 (2.0.3-0~xenial0+exo1) bionic; urgency=medium
 
   * Import bird 2.0.3
 
  -- Jean-Philippe Menil <jpmenil@exoscale.ch>  Wed, 01 Jan 2019 11:15:00 +0200
 
-bird2 (2.0.2-0~bionic0+exo1) bionic; urgency=medium
+bird2 (2.0.2-0~xenial0+exo1) bionic; urgency=medium
 
   * Initial release. Co-installable with bird.
 
