@@ -54,3 +54,6 @@ override_dh_missing:
 
 override_dh_compress:
 	dh_compress -X.conf
+
+override_dh_builddeb:
+	dh_builddeb -- -Zxz
