@@ -30,7 +30,6 @@ Depends: adduser,
          ucf,
          ${misc:Depends},
          ${shlibs:Depends}
-Conflicts: bird
 Suggests: bird2-doc
 Description: Internet Routing Daemon
  BIRD is an Internet routing daemon with full support for all the major
