@@ -1,3 +1,9 @@
+bird2 (2.0.8-2+exo1) jammy; urgency=medium
+
+  * Remove bird package runtime conflict.
+
+ -- Alexandros Afentoulis <alexandros.afentoulis@exoscale.ch>  Fri, 02 Dec 2022 14:42:27 +0200
+
 bird2 (2.0.8-2) unstable; urgency=medium
 
   * Source-only upload to allow migration
