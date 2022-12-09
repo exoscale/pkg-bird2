@@ -1,3 +1,9 @@
+bird2 (2.0.8-2+exo2) jammy; urgency=medium
+
+  * Rename bird to bird2
+
+ -- Alexandros Afentoulis <alexandros.afentoulis@exoscale.ch>  Fri, 09 Dec 2022 17:49:05 +0200
+
 bird2 (2.0.8-2+exo1) jammy; urgency=medium
 
   * Remove bird package runtime conflict.
