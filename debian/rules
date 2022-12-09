@@ -9,8 +9,8 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/default.mk
 
-COMMON_FLAGS= --prefix=/usr --sysconfdir=/etc/bird --mandir=\$${prefix}/share/man \
-	--infodir=\$${prefix}/share/info --localstatedir=/var --runstatedir=/run/bird \
+COMMON_FLAGS= --prefix=/usr --sysconfdir=/etc/bird2 --mandir=\$${prefix}/share/man \
+	--infodir=\$${prefix}/share/info --localstatedir=/var --runstatedir=/run/bird2 \
 	--docdir=\$${prefix}/share/bird2 \
 	--enable-client
 
@@ -29,12 +29,16 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/tmp
+	ls -l
+	mv debian/tmp/usr/sbin/bird debian/tmp/usr/sbin/bird2
+	mv debian/tmp/usr/sbin/birdc debian/tmp/usr/sbin/bird2c
+	mv debian/tmp/usr/sbin/birdcl debian/tmp/usr/sbin/bird2cl
 
 override_dh_installinit:
-	dh_installinit --name=bird --restart-after-upgrade
+	dh_installinit --name=bird2 --restart-after-upgrade
 
 override_dh_installsystemd:
-	dh_installsystemd --name=bird --restart-after-upgrade
+	dh_installsystemd --name=bird2 --restart-after-upgrade
 
 DB2MAN = /usr/share/sgml/docbook/stylesheet/xsl/nwalsh/manpages/docbook.xsl
 XP     = xsltproc -''-nonet -''-param man.charmap.use.subset "0"
