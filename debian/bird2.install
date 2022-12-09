@@ -1,4 +1,4 @@
-etc/bird2/bird.conf /etc/bird2/
+etc/bird2/bird.conf /usr/share/bird2/
 debian/envvars /etc/bird2/
 debian/prepare-environment /usr/lib/bird2/
 usr/sbin/bird2

@@ -3,11 +3,11 @@ Description=BIRD Internet Routing Daemon
 After=network.target
 
 [Service]
-EnvironmentFile=/etc/bird/envvars
-ExecStartPre=/usr/lib/bird/prepare-environment
-ExecStartPre=/usr/sbin/bird -p
-ExecReload=/usr/sbin/birdc configure
-ExecStart=/usr/sbin/bird -f -u $BIRD_RUN_USER -g $BIRD_RUN_GROUP $BIRD_ARGS
+EnvironmentFile=/etc/bird2/envvars
+ExecStartPre=/usr/lib/bird2/prepare-environment
+ExecStartPre=/usr/sbin/bird2 -p
+ExecReload=/usr/sbin/bird2c configure
+ExecStart=/usr/sbin/bird2 -f -u $BIRD_RUN_USER -g $BIRD_RUN_GROUP $BIRD_ARGS
 Restart=on-abort
 
 [Install]

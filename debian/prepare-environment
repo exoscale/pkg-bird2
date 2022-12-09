@@ -2,8 +2,8 @@
 
 set -eu
 
-BIRD_RUN_DIR=/run/bird
-. /etc/bird/envvars
+BIRD_RUN_DIR=/run/bird2
+. /etc/bird2/envvars
 
 
 mkdir --parents "$BIRD_RUN_DIR";
