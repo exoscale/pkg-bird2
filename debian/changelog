@@ -1,3 +1,9 @@
+bird2 (2.0.8-2+exo3) jammy; urgency=medium
+
+  * Replace some bird remnants with bird2.
+
+ -- Alexandros Afentoulis <alexandros.afentoulis@exoscale.ch>  Mon, 12 Dec 2022 12:47:10 +0200
+
 bird2 (2.0.8-2+exo2) jammy; urgency=medium
 
   * Rename bird to bird2
