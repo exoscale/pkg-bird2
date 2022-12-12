@@ -51,7 +51,7 @@ override_dh_installman: bird.8
 
 override_dh_clean:
 	dh_clean
-	-rm -f bird.8 birdc.8
+	-rm -f bird2.8 bird2c.8
 
 override_dh_missing:
 	dh_missing  --fail-missing

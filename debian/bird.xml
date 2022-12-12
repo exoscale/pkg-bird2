@@ -88,11 +88,11 @@ man(1), man(7), http://www.tldp.org/HOWTO/Man-Page/
     <manvolnum>&dhsection;</manvolnum>
   </refmeta>
   <refnamediv>
-    <refname>bird</refname>
+    <refname>bird2</refname>
     <refpurpose>BIRD Internet Routing Daemon</refpurpose>
   </refnamediv>
   <refnamediv>
-    <refname>birdc</refname>
+    <refname>bird2c</refname>
     <refpurpose>BIRD Internet Routing Daemon remote control</refpurpose>
   </refnamediv>
 
